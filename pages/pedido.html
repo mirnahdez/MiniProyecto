@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js"></script>
+    <title>Carrito de Compra</title>
+</head>
+
+<body onload="enviarHTMLTBodyCarritoCompra()">
+    <header>
+        <div>
+            <img src="../images/logo.jpg" alt="Logotipo" id="logo">
+            <h1>Decoraciones y Más</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/catalogoProductos.html">Catálogo Productos</a></li>
+                <li><a href="pages/login.html" target="_blank">Ingresar</a></li>
+                <li><a href="pages/signin.html" target="_blank">Regístrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input type="button" value="Confirmar Pedido" onclick="agregarArticulosCarritoCompra()">
+        <input type="button" value="Eliminar Productos" onclick="agregarArticulosCarritoCompra()">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Cant.</th>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="tbArticulosCarritoCompra">
+                <!-- <tr>
+                    <td><input type="checkbox" name="articuloCarritoFlagAgregar.1" id="articuloCarritoFlagAgregar.1"></td>
+                    <td><input type="number" name="articuloCarritoCantidad.1" id="articuloCarritoCantidad.1"></td>
+                    <td>codigo</td>
+                    <td>Descripción</td>
+                    <td>precio</td>
+                    <td>Imagen</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <!-- Copyrigth -->
+        <div>
+            <p>Copyright © 2021 Decoraciones y Más, S.A. Derechos Reservados.</p>
+        </div>
+        <!-- Contacto -->
+        <div class="footer1">
+            <img src="../images/phone.png" alt="Phone">
+            <p>+502-2295-4545</p>
+        </div>
+    </footer>
+</body>
+</html>

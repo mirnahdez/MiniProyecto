@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <title>Carrito de Compra</title>
+</head>
+
+<body onload="enviarHTMLTBodyCarritoCompra()" id="bodyCarritoCompra">
+    <!-- <div>
+        <h4>¡Tu pedido ha sido enviado!</h4>
+        <p>Los detalles de la orden han sido enviados a tu correo, puedes llamarnos al +502-2295-4545 en caso de consultas o reclamos relacionados con tu pedido.</p>
+        <a href="../index.html">Volver al inicio</a>
+    </div> -->
+    <header>
+        <div>
+            <img src="../images/logo.jpg" alt="Logotipo" id="logo">
+            <h1>Decoraciones y Más</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_blank">Inicio</a></li>
+                <li><a href="../pages/catalogoProductos.html" target="_blank">Productos</a></li>
+                <li><a href="../pages/tienda.html" target="_blank">Tienda</a></li>
+                <li><a href="../pages/login.html" target="_blank">Ingresar</a></li>
+                <li><a href="../pages/signin.html" target="_blank">Regístrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="opcionesCarritoCompra">
+            <!-- <form action="">
+                <fieldset>
+                    <legend>Datos del Cliente</legend>
+                    <div>
+                        <label for="nit">NIT</label>
+                        <input type="text" id="nit" name="nit">
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de Entrega</legend>
+                    <div>
+                        <label for="direccion">Dirección</label>
+                        <textarea name="direccion" id="direccion" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label for="comentario">Información Adicional</label>
+                        <input type="text" id="comentario" name="comentario">
+                    </div>
+                </fieldset>
+            </form>
+            <input type="button" value="Enviar Pedido">
+            <input type="button" value="Descartar Carrito de Compra"> -->
+
+            <input type="button" value="Confirmar Carrito de Compra" onclick="confirmarCarritoCompra()" class="btn btn-block btn-outline-success">
+            <input type="button" value="Eliminar Carrito de Compra" onclick="enviarDescartarPedido(this)"
+                id="descartarPedido" class="btn btn-block btn-outline-warning">
+        </div>
+        <table class="table table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <!-- <th>#</th> -->
+                    <th>Cant.</th>
+                    <th>Código</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="tbArticulosCarritoCompra">
+                <!-- <tr>
+                    <td><input type="checkbox" name="articuloCarritoFlagAgregar.1" id="articuloCarritoFlagAgregar.1"></td>
+                    <td><input type="number" name="articuloCarritoCantidad.1" id="articuloCarritoCantidad.1"></td>
+                    <td>codigo</td>
+                    <td>Descripción</td>
+                    <td>precio</td>
+                    <td>Imagen</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <!-- Copyrigth -->
+        <div>
+            <p>Copyright © 2021 Decoraciones y Más, S.A. Derechos Reservados.</p>
+        </div>
+        <!-- Contacto -->
+        <div class="footer1">
+            <img src="../images/phone.png" alt="Phone">
+            <p>+502-2295-4545</p>
+        </div>
+    </footer>
+</body>
+
+</html>

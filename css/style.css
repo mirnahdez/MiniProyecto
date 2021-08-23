@@ -1,0 +1,269 @@
+/*  Para la aplicación de estilos, se utilizaron los selectores de tipo clase, identificador 
+    y elemento.
+ */
+
+/* Para una resolucion de 1280 de ancho */
+
+/* Barra de Navegacion */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#logo {
+    height: 45px;
+    border-radius: 25px;
+}
+
+header {
+    background-color: rgb(252, 96, 182);
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 50px;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 60px auto;
+    border-right: black 1px solid;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+nav a:hover, .main1-section1 a:hover, .main1-section3-div1:hover {
+    background-color: wheat;
+    color: black;
+}
+
+/* Pie de Pagina */
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: black 3px solid;
+    background-color: rgb(252, 96, 182);
+    height: 45px;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+footer img {
+    height: 40px;
+}
+
+/* Cuerpo */
+
+/* Paginas que NO tienen formulario de login o de registro de usuario */
+
+p {
+    text-align: justify;
+}
+
+.main1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.main1 img {
+    width: 300px;
+    border: black 2px solid;
+    margin: 0.5%;
+}
+
+.main1-section1 {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background-color: rgb(223, 162, 209);
+    border: black 3px solid;
+}
+
+.main1-section1 a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.main1-section1 li {
+    display: block;
+    margin: 2%;
+}
+
+.main1-section1 div {
+    border: 1px black solid;
+}
+
+.main1-section1 ul {
+    padding: 1%;
+}
+
+.main1-section2 {
+    background-color: rgb(226, 211, 223);
+    border: black 3px solid;
+}
+
+.main1-section2 article {
+    margin: 1%;
+    border: black 1.5px solid;
+    padding: 1%;
+    background-color: rgb(230, 176, 230);
+}
+
+.main1-section2 article:hover, .main1-section1 div:hover {
+    background-color: rgb(230, 230, 118);
+}
+
+.main1-section3 h2 {
+    text-align: center;
+}
+
+.main1-section3-div1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 1%;
+}
+
+/* Para las paginas de login y registro de usuario */
+
+.main2 {
+    background-color: rgb(223, 162, 209);
+    border: black 3px solid;
+    text-align: center;
+}
+
+.main2 h4 {
+    font-size: x-large;
+}
+
+.main2 div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: right;
+}
+
+.main2-input1 {
+    margin: 2px;
+    width: 500px;
+}
+
+.main2-input2 {
+    width: 700px;
+}
+
+#btnSubmit {
+    background-color: rgb(25, 230, 42);
+    height: 40px;
+    width: 100px;
+    font-size: large;
+    margin: 4px;
+}
+
+.main2 label {
+    font-size: large;
+}
+
+.main2 fieldset {
+    margin: 3px;
+}
+
+/* para las imágenes que están en las tablas en catálogo y tienda */
+td img{
+    width: 40%;
+}
+
+
+/* En este apartado se aplica web responsive, si es de un maximo de 600 pixeles de 
+    ancho, se aplican los siguientes cambios */
+
+@media (max-width: 600px) {
+
+    #logo {
+        height: 35px;
+        border-radius: 15px;
+    }
+    h1 {
+        font-size: medium;
+    }
+    nav a {
+        font-size: medium;
+    }
+
+    /* Pie de Pagina */
+    footer {
+        display: block;
+        height: 90px;
+    }
+    footer img {
+        height: 20px;
+    }
+
+    .main1 {
+        display: block;
+    }
+
+    .main1-section1{
+        display: block;
+    }
+
+    .main1-section1 a{
+        font-size: medium;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .main2 h4{
+        font-size: large;
+    }
+
+    .main2-input1{
+        width: auto;
+    }
+
+    .main2 label{
+        font-size: medium;
+    }
+}
+
+/* En este apartado se aplica web responsive, si es de un maximo de 460 pixeles de 
+    ancho, se aplican los siguientes cambios */
+
+@media (max-width:460px){
+    header {
+        display: block;
+        height: 80px;
+    }
+
+    .main1-section3-div1{
+        display: block;
+    }
+    
+    .main2-input1{
+        width: auto;
+    }
+    
+    .main2 h4{
+        font-size: medium;
+    }
+
+    .main2 label{
+        font-size: medium;
+    }
+}
